@@ -168,20 +168,7 @@ async def get_ststs(bot, message):
     free = 536870912 - size
     size = get_size(size)
     free = get_size(free)
-    ram = psutil.virtual_memory().percent
-    cpu = psutil.cpu_percent()
-    start_t = time.time()
-    end_t = time.time()
-    time_taken_s = (end_t - start_t) * 1000
-    uptime = await get_bot_uptime()
     await rju.edit(text=f"""
-── • ❰ 🍃 Bᴏᴛ Sᴛᴀᴛᴜꜱ 🍃❱ • ──
- 
-⏳ ʙᴏᴛ ᴜᴘᴛɪᴍᴇ: <code>{uptime}</code>
-☣️ ᴄᴘᴜ: <code>{cpu}</code>
-☢️ ʀᴀᴍ: <code>{ram}</code>
-♨️ ᴘɪɴɢ: <code>{time_taken_s:.3f} ms</code>
-
 ── • ❰ 🍃 Dᴀᴛᴀʙᴀꜱᴇ Sᴛᴀᴛᴜꜱ 🍃❱ • ──
 
 📊 ғɪʟᴇs sᴀᴠᴇᴅ: <code>{files}</code>
