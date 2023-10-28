@@ -11,8 +11,6 @@ from database.ia_filterdb import Media
 from utils import get_size, temp, get_settings
 from Script import script
 from pyrogram.errors import ChatAdminRequired
-from info import BOT_START_TIME
-start_time = BOT_START_TIME
 
 STATUS_TXT = """
 --- {uptime}
