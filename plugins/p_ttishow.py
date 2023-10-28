@@ -13,24 +13,10 @@ from Script import script
 from pyrogram.errors import ChatAdminRequired
 
 STATUS_TXT = """
---- {uptime}
---- {time_taken_s:.3f}
 --- {totl_chats}
 --- {files}
 --- {free}
 """
-
-async def get_bot_uptime():
-    # Calculate the uptime in seconds
-    uptime_seconds = int(time.time() - start_time)
-    uptime_minutes = uptime_seconds // 60
-    uptime_hours = uptime_minutes // 60
-    uptime_days = uptime_hours // 24
-    uptime_weeks = uptime_days // 7
-    ###############################
-    uptime_string = f"{uptime_days % 7} Day | {uptime_hours % 24} Hour | {uptime_minutes % 60} Min | {uptime_seconds % 60} Sec"
-    return uptime_string
-
 
 """-----------------------------------------https://t.me/GetTGLink/4179 --------------------------------------"""
 
