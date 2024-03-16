@@ -1,6 +1,6 @@
 pyrogram
 tgcrypto
-pymongo[srv]==3.12.3
+pymongo[srv]==4.3.2
 motor==3.0.0
 marshmallow==3.14.1
 umongo==3.0.1
