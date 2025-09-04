@@ -12,3 +12,4 @@ python-dotenv
 datetime
 pytz
 psutil
+python3-distutils
