@@ -51,9 +51,12 @@ async def is_subscribed(bot, query):
         return True
     
 
-    if db2() is not None and db2().isActive():
-    user = await db2().get_user(query.from_user.id)
-    return bool(user)
+    if db2().isActive():
+        user = await db2().get_user(query.from_user.id)
+        if user:
+            return True
+        else:
+            return False
 
     if not AUTH_CHANNEL:
         return True
